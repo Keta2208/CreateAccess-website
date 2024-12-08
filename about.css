@@ -32,7 +32,7 @@ main {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to bottom, #123b78, #6a0dad); /* Blue to purple blend */
+    background: linear-gradient(to bottom, #0d3167, #8035b6); /* Blue to purple blend */
     color: white;
 }
 
@@ -41,7 +41,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: #123b78;
+    background:#0d3167;
 }
 
 header .logo img {
@@ -84,7 +84,7 @@ header nav ul {
 }
 
 .oval-container {
-    background: linear-gradient(to bottom, #366bb5, #6a0dad);
+    background: linear-gradient(to bottom, #1f64b3, #72359d);
     border-radius: 80px;
     padding: 2rem;
     text-align: center;
