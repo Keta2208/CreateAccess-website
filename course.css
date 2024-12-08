@@ -28,7 +28,7 @@ header {
 }
 
 header .logo img {
-    height: 60px;
+    height: 100px;
 }
 
 header nav ul {
@@ -55,54 +55,97 @@ header nav ul {
     background: #6a0dad;
 }
 
-/* Oval Container */
-.oval-container {
-    background: linear-gradient(to bottom, #366bb5, #6a0dad);
-    /* Blue to purple blend */
-    border-radius: 80px;
+/* Microcourses Hub Section */
+.microcourses-hub {
+    text-align: center;
+    margin: 2rem auto;
     padding: 3rem;
-    margin: 3rem auto;
+    background: linear-gradient(to bottom, #366bb5, #6a0dad);
+    border-radius: 80px;
     width: 90%;
+    height: 60%;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.oval-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    gap: 2rem;
 }
 
-.microcourse-text {
-    max-width: 50%;
+.microcourses-text {
+    flex: 1;
+    text-align: left;
+    padding: 2rem;
+    color: white;
 }
 
-.microcourse-text h2 {
-    font-size: 2rem;
+.microcourses-heading {
     margin-bottom: 1rem;
 }
 
-.microcourse-text p {
-    margin-bottom: 1rem;
-}
-
-.download-button {
-    padding: 0.5rem 1.5rem;
-    background: #99ea6e;
-    color: #010f23;
+.microcourses-tag {
+    background:  #660bab;
+    color: white;
     border: none;
-    border-radius: 25px;
-    font-size: 1rem;
-    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 70px;
+    cursor: default;
+    
 }
 
-.download-button:hover {
+.start-learning {
+    margin: 1rem 0;
+    padding: 0.5rem 1.5rem;
+    background: #9ff273;
+    color: rgb(16, 1, 1);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.start-learning:hover {
     background: #4c1178;
     color: white;
 }
 
-.microcourse-image img {
+.get-uefn {
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(to right, #3da8f5, #7ac74f);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.get-uefn:hover {
+    background: #3da8f5;
+    color: white;
+}
+
+.microcourses-image {
+    flex: 1;
+}
+
+.microcourses-image img {
     border-radius: 50%;
-        width: 700px;
-        height: 500px;
-        object-fit: cover;
-        border: 5px solid #00378a;
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Fundamental Learning Section */
@@ -117,7 +160,7 @@ header nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 3rem;
     margin-bottom: 2rem;
 }
 
@@ -146,17 +189,19 @@ header nav ul {
     justify-content: center;
     align-items: flex-start;
     text-align: center;
+
 }
 
 .resource {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: calc();
     justify-content: flex-start;
     padding: 1rem;
     background: linear-gradient(to bottom, #1c75c3, #7123a9);
-    border-radius: 20px;
+    border-radius: 50px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 .resource-button {
@@ -171,6 +216,7 @@ header nav ul {
     cursor: pointer;
     transition: 0.3s ease;
     width: 100%;
+    align-items: center;
 }
 
 .resource-button:hover {
@@ -179,19 +225,20 @@ header nav ul {
 }
 
 .image-container {
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 .image-container img {
     max-width: 200px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .guide-link {
-    font-size: 0.9rem;
-    color: #3da8f5;
+    font-size: 2rem;
+    color: #000b13;
     text-decoration: none;
     margin-top: 1rem;
+    font-weight: bolder;
 }
 
 .guide-link:hover {
