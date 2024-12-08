@@ -36,7 +36,7 @@ main {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to bottom, #0c387b, #3c135a);
+    background: #0c387b;
     color: white;
 }
 
@@ -50,13 +50,13 @@ header {
 }
 
 header .logo img {
-    height: 100px;
+    height: 150px;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .header-button {
@@ -87,7 +87,7 @@ header nav ul {
 }
 
 .page-heading {
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
     margin-bottom: 2rem;
     color: #f5f5f6;
@@ -99,7 +99,7 @@ header nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1.5rem;
     margin-bottom: 2rem;
     align-items: center;
 }
@@ -119,7 +119,7 @@ header nav ul {
 }
 
 .mission-item .text-content {
-    max-width: 55%;
+    max-width: 50%;
     /* Content width */
     display: flex;
     flex-direction: column;
@@ -127,7 +127,7 @@ header nav ul {
 }
 
 .mission-item h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #ecf2fb;
     /* Blue text color */
     margin-bottom: 0.5rem;
@@ -143,9 +143,9 @@ header nav ul {
 /* Divider Line */
 hr {
     border: none;
-    border-top: 1px solid rgba(200, 200, 200, 0.5);
+    border-top: 1px solid rgba(88, 232, 81, 0.5);
     /* Subtle gray divider */
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 /* Responsive Adjustments */
