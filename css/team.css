@@ -344,7 +344,7 @@ main {
 }
 
 .team-card {
-    background: linear-gradient(135deg, #007bff, #6a0dad);
+    background: linear-gradient(to bottom, #1f64b3, #72359d);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
