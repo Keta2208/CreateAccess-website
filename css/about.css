@@ -2,48 +2,29 @@
 body,
 h1,
 h2,
-h3,
 p,
 ul,
 li,
 a,
-input,
-textarea,
 button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Ensure the page spans the full height */
-html, body {
-    height: 100%; /* Full height */
-    display: flex;
-    flex-direction: column; /* Stack header, content, and footer vertically */
-}
-
-/* Main content takes all available space */
-main {
-    flex: 1; /* Fills remaining space between header and footer */
-    padding: 2rem;
-}
-
-/* Body Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     background: linear-gradient(to bottom, #00378a, #6a0dad);
-/* Blue to purple blend */
     color: white;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     background: #00378a;
-
 }
 
 header .logo img {
@@ -57,58 +38,68 @@ header nav ul {
 }
 
 .header-button {
+    padding: 0.5rem 1rem;
     text-decoration: none;
+    background: #366bb5;
+    border-radius: 50px;
     color: white;
     font-weight: bold;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #467fd0;
-    border-radius: 80px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
+    transition: 0.3s;
 }
 
 .header-button.active {
-    background-color: #802fb9;
+    background: #6a0dad;
 }
 
 .header-button:hover {
-    background-color: #6a0dad;
+    background: #6a0dad;
 }
 
 /* About Section */
 .about {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    padding: 1rem;
+    padding: 3rem 1rem;
+    text-align: center;
 }
 
 .oval-container {
-    background: linear-gradient(to bottom, #1f64b3, #72359d);
-    border-radius: 80px;
+    margin: 2rem auto;
     padding: 2rem;
-    text-align: center;
-    width: 30%;
-    height: 40%;
-    gap: 2rem;
+    background: linear-gradient(to bottom, #19519e, #6a0dad);
+    border-radius: 50px;
+    border: 1px solid #ddd;
+
+    width: 70%;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: left;
 }
 
 .oval-container h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.oval-container p {
+    line-height: 1.6;
+    font-size: 1.1rem;
 }
 
 .submit-button {
-    background-color: #3da8f5;
-    color: #000000;
-    padding: 0.8rem 2rem;
+    margin-top: 1.5rem;
+    padding: 0.5rem 2rem;
+    background: linear-gradient(to right, #3da8f5, #7ac74f);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
     border: none;
     border-radius: 50px;
-    font-size: 1rem;
     cursor: pointer;
+    text-transform: uppercase;
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #4c1178;
 }
 
 .submit-button a {
@@ -116,23 +107,17 @@ header nav ul {
     color: inherit;
 }
 
-.submit-button:hover {
-    background-color: #00378a;
-    color: white;
-}
-
-/* Meet Our Team Button */
 .team-btn {
-    display: block;
-    margin: 2rem auto;
-    background-color: #3da8f5;
-    padding: 1rem 2rem;
-    color: #000000;
-    font-size: 1rem;
-    border-radius: 50px;
+    margin-top: 3rem;
+    padding: 0.7rem 2rem;
+    background: #7ac74f;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
     border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
     cursor: pointer;
-    text-align: center;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -142,61 +127,55 @@ header nav ul {
 }
 
 .team-btn:hover {
-    background-color: #00378a;
-    color: white;
-}
-.learn-more {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    background-color: #6abcf6;
-    color: #00378a;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.learn-more:hover {
-    background-color: #00378a;
-    color: white;
+    background: #4c1178;
 }
 
 /* Footer */
 .footer {
+    margin-top: 2rem;
     background: #4c1178;
     padding: 2rem 1rem;
-    margin-top: auto; /* Push footer to the bottom */
-    text-align: center;
 }
 
 .footer-columns {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 2rem;
-    flex-wrap: wrap;
 }
 
 .footer-column {
-    text-align: center;
     flex: 1;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.icons img {
+    width: 20px;
 }
 
 .footer-links ul {
     list-style: none;
-    padding: 0;
 }
 
 .footer-links ul li a {
     color: white;
     text-decoration: none;
-    padding: 0.5rem;
+    font-size: 0.9rem;
 }
 
 .footer-links ul li a:hover {
     text-decoration: underline;
 }
+
 .subscription-form {
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 0.5rem;
     margin-top: 1rem;
@@ -204,21 +183,21 @@ header nav ul {
 
 .subscription-form input {
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     border: none;
     border-radius: 5px;
 }
 
 .subscription-form button {
     padding: 0.5rem 1rem;
-    background: #7ac74f;
+    background-color: #7ac74f;
+    color: #4c1178;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.icons img {
-    width: 30px;
-    height: auto;
-    margin: 0 0.5rem;
+.subscription-form button:hover {
+    background-color: #4c1178;
+    color: white;
 }

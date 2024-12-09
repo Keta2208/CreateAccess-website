@@ -18,7 +18,7 @@ button {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to bottom, #123b78, #6a0dad);
+    background: linear-gradient(to bottom, #00378a, #591e84);
     /* Blue to purple blend */
     color: white;
 }
@@ -28,7 +28,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: #123b78;
+    background: #00378a;
 }
 
 header .logo img {
@@ -97,7 +97,7 @@ header nav ul {
 }
 
 #read-more-btn {
-    background-color: #28a745;
+    background-color: #366bb5;
     color: white;
     border: none;
     border-radius: 5px;
@@ -107,7 +107,7 @@ header nav ul {
 }
 
 #read-more-btn:hover {
-    background-color: #218838;
+    background-color: #00378a;
 }
 
 #more {
@@ -172,21 +172,22 @@ header nav ul {
 
 /* Button Styling */
 .donate-button {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #28a745;
+    padding: 1rem 1rem;
+    background: linear-gradient(to right, #3da8f5, #7ac74f);
+    color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 70px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
+    width: 100%;
+    align-items: center;
 }
 
 .donate-button:hover {
-    background-color: #218838;
+    background-color: #00378a;
 }
 
 /* Optional: Form Container Styling */

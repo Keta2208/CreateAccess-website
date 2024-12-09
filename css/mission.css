@@ -15,30 +15,12 @@ button {
     box-sizing: border-box;
 }
 
-/* Ensure the page spans the full height */
-html,
-body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Main content takes all available space */
-main {
-    flex: 1;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-/* Body Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: #0c387b;
+    background: linear-gradient(to bottom, #00378a, #6a0dad);
     color: white;
 }
+
 
 /* Header */
 header {
@@ -46,7 +28,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: #0c387b;
+    background: #00378a;
 }
 
 header .logo img {
@@ -81,9 +63,12 @@ header nav ul {
 
 /* Mission Section */
 .mission-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    /* max-width: 1200px; Keep content centered and limited */
+    margin: 0 auto; /* Center align without extra space */
+    background: linear-gradient(to bottom, #00378a, #6a0dad); /* Background gradient */
+    padding: 2rem; /* Space inside */
+    border: none; /* Ensure no border */
+    box-shadow: none; /* Remove shadow if causing border-like effect */
 }
 
 .page-heading {

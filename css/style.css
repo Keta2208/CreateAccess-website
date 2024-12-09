@@ -64,6 +64,8 @@ header nav ul {
     /* Blue to purple blend */
     border-radius: 80px;
     padding: 3rem;
+    border: 1px solid #ddd;
+
     margin: 3rem auto;
     width: 70%;
     height: 50%;

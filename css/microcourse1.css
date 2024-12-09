@@ -131,7 +131,7 @@ header nav ul {
 }
 
 .module-content {
-    background:linear-gradient(to bottom, #2c6fd3, #7f27bd);
+    background:#2c6fd3;
     color: #123b78;
     padding: 2rem;
     border-radius: 20px;
