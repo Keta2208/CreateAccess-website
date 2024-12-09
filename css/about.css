@@ -32,7 +32,8 @@ main {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to bottom, #10294f, #591e84); /* Blue to purple blend */
+    background: linear-gradient(to bottom, #00378a, #6a0dad);
+/* Blue to purple blend */
     color: white;
 }
 
@@ -41,7 +42,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background:#10294f;
+    background: #00378a;
+
 }
 
 header .logo img {
