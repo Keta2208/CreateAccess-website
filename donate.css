@@ -63,24 +63,35 @@ header nav ul {
 
 /* General Form Styling */
 .donation-content {
-    display: flex; /* Makes text and form appear side by side */
-    flex-wrap: wrap; /* Allows stacking on smaller screens */
-    gap: 20px; /* Space between the form and text */
-    align-items: flex-start; /* Aligns items to the top */
-    justify-content: space-between; /* Ensures space is balanced between elements */
+    display: flex;
+    /* Makes text and form appear side by side */
+    flex-wrap: wrap;
+    /* Allows stacking on smaller screens */
+    gap: 30px;
+    /* Space between the form and text */
+    align-items: flex-start;
+    /* Aligns items to the top */
+    justify-content: space-between;
+    /* Ensures space is balanced between elements */
     margin-top: 20px;
 }
 
 .donation-text {
-    flex: 1;
-    max-width: 600px;
-    background-color: #f9f9f9; /* Light background color for the box */
-    border: 1px solid #ddd; /* Light border */
-    border-radius: 8px; /* Slightly rounded corners */
-    padding: 20px; /* Add spacing inside the box */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow */
-    color: #555; /* Text color */
-    margin-left: 100px;
+    flex: 2;
+    max-width: 500px;
+    background-color: #f9f9f9;
+    /* Light background color for the box */
+    border: 1px solid #ddd;
+    /* Light border */
+    border-radius: 10px;
+    /* Slightly rounded corners */
+    padding: 20px;
+    /* Add spacing inside the box */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Optional: Adds subtle shadow */
+    color: #555;
+    /* Text color */
+    margin-left: 300px;
     margin-top: 100px;
 }
 
@@ -260,5 +271,5 @@ header nav ul {
 }
 
 .email-address {
-    padding: 10px 0; 
+    padding: 10px 0;
 }
