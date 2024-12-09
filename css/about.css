@@ -143,6 +143,21 @@ header nav ul {
     background-color: #00378a;
     color: white;
 }
+.learn-more {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #6abcf6;
+    color: #00378a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.learn-more:hover {
+    background-color: #00378a;
+    color: white;
+}
 
 /* Footer */
 .footer {
