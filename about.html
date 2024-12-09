@@ -1,224 +1,107 @@
-/* General Reset */
-body,
-h1,
-h2,
-h3,
-p,
-ul,
-li,
-a,
-input,
-textarea,
-button {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-/* Ensure the page spans the full height */
-html, body {
-    height: 100%; /* Full height */
-    display: flex;
-    flex-direction: column; /* Stack header, content, and footer vertically */
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CreateAccess</title>
+    <link rel="stylesheet" href="css/about.css">
+</head>
 
-/* Main content takes all available space */
-main {
-    flex: 1; /* Fills remaining space between header and footer */
-    padding: 2rem;
-}
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="CreateAccess Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="header-button">Home</a></li>
+                <li><a href="course.html" class="header-button">Courses</a></li>
+                <li><a href="about.html" class="header-button active">About Us</a></li>
+                <li><a href="contact.html" class="header-button">Contact</a></li>
+                <li><a href="donate.html" class="header-button">Donate</a></li>
+                <li><a href="https://store.epicgames.com/en-US/" class="header-button">Download</a></li>
+            </ul>
+        </nav>
+    </header>
 
-/* Body Styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: linear-gradient(to bottom, #00378a, #6a0dad);
-/* Blue to purple blend */
-    color: white;
-}
+    <main>
+        <section class="about">
+            <div class="oval-container">
+                <h2>Our Mission</h2>
+                <p>
+                    At CreateAccess, our goal is to increase access to 3D creation. 3D creation provides pathways to
+                    economic and creative opportunities in high-impact fields, and it's easier than ever to get started.
+                </p>
+                <button class="submit-button">
+			<a href="mission.html">Learn More</a>
+                </button>
+            </div>
+            <div class="oval-container">
+                <h2>Future Plans</h2>
+                <p>
+                    Here at CreateAccess, we plan to release more content to allow further growth for those interested
+                    in 3D creation, as well as collaborating with schools and other places of learning to create
+                    opportunities for students.
+                </p>
+                <button class="learn-more class="submit-button">
+                    <a >Learn More</a> 
+                </button>
+            </div>
+            <div class="oval-container">
+                <h2>Connect with Us</h2>
+                <p>
+                    For any inquiries, reach out by emailing us at hello@createaccess.org, or use the link below to
+                    access our contact form. We look forward to hearing from you!
+                </p>
+                <button class="submit-button">
+                    <a href="contact.html">Contact Us</a>
+                </button>
+            </div>
+        </section>
+        <!-- Add Meet Our Team button -->
+        <button class="team-btn">
+		    <a href="team.html">Meet Our Team</a>
+        </button>
+    </main>
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: #00378a;
+    <footer class="footer">
+        <div class="footer-columns">
+            <div class="footer-column social-links">
+                <h3>Follow</h3>
+                <div class="icons">
+                    <img src="images/twitter.png" alt="Twitter">
+                    <img src="images/facebook.png" alt="Facebook">
+                    <img src="images/youtube.png" alt="YouTube">
+                    <img src="images/instagram.png" alt="Instagram">
+                </div>
+                <p>&copy; CreateAccess, 2024</p>
+            </div>
 
-}
+            <div class="footer-column footer-links">
+                <ul>
+                    <li><a href="#">Microcourse Hub</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
 
-header .logo img {
-    height: 150px;
-}
+            <div class="footer-column stay-connected">
+                <h3>Stay Connected</h3>
+                <div class="subscription-form">
+                    <input type="email" placeholder="Enter your email to subscribe">
+                    <button type="submit">&#9658;</button>
+                </div>
+                <p>hello@createaccess.org</p>
+                <p>By entering your email, you agree to be contacted by CreateAccess.</p>
+            </div>
+        </div>
+    </footer>
+<script src="js/script.js"></script>
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 3rem;
-}
+</body>
 
-.header-button {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #467fd0;
-    border-radius: 80px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
-}
-
-.header-button.active {
-    background-color: #802fb9;
-}
-
-.header-button:hover {
-    background-color: #6a0dad;
-}
-
-/* About Section */
-.about {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    padding: 1rem;
-}
-
-.oval-container {
-    background: linear-gradient(to bottom, #1f64b3, #72359d);
-    border-radius: 80px;
-    padding: 2rem;
-    text-align: center;
-    width: 30%;
-    height: 40%;
-    gap: 2rem;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
-}
-
-.oval-container h2 {
-    margin-bottom: 2rem;
-}
-
-.submit-button {
-    background-color: #3da8f5;
-    color: #000000;
-    padding: 0.8rem 2rem;
-    border: none;
-    border-radius: 50px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.submit-button a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.submit-button:hover {
-    background-color: #00378a;
-    color: white;
-}
-
-/* Meet Our Team Button */
-.team-btn {
-    display: block;
-    margin: 2rem auto;
-    background-color: #3da8f5;
-    padding: 1rem 2rem;
-    color: #000000;
-    font-size: 1rem;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.team-btn a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.team-btn:hover {
-    background-color: #00378a;
-    color: white;
-}
-.learn-more {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    background-color: #6abcf6;
-    color: #00378a;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.learn-more:hover {
-    background-color: #00378a;
-    color: white;
-}
-
-/* Footer */
-.footer {
-    background: #4c1178;
-    padding: 2rem 1rem;
-    margin-top: auto; /* Push footer to the bottom */
-    text-align: center;
-}
-
-.footer-columns {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.footer-column {
-    text-align: center;
-    flex: 1;
-}
-
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem;
-}
-
-.footer-links ul li a:hover {
-    text-decoration: underline;
-}
-.subscription-form {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-top: 1rem;
-}
-
-.subscription-form input {
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-}
-
-.subscription-form button {
-    padding: 0.5rem 1rem;
-    background: #7ac74f;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.icons img {
-    width: 30px;
-    height: auto;
-    margin: 0 0.5rem;
-}
+</html>
