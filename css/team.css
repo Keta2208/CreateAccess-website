@@ -13,6 +13,14 @@ button {
     box-sizing: border-box;
 }
 
+/* 设置标题样式 */
+main h2 {
+    text-align: center; /* 标题水平居中 */
+    font-size: 2rem; /* 调整字体大小 */
+    margin-bottom: 20px; /* 添加下边距 */
+    color: white; /* 可选：调整标题颜色 */
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -336,7 +344,7 @@ main {
 }
 
 .team-card {
-    background: white;
+    background: linear-gradient(135deg, #007bff, #6a0dad);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -358,13 +366,13 @@ main {
 .team-card h3 {
     margin: 15px 0 5px;
     font-size: 1.5rem;
-    color: #333;
+    color: white;
 }
 
 .team-card p {
     margin: 0 10px 15px;
     font-size: 1rem;
-    color: #666;
+    color: white;
 }
 
 .team-card button {
