@@ -13,12 +13,11 @@ button {
     box-sizing: border-box;
 }
 
-/* 设置标题样式 */
 main h2 {
-    text-align: center; /* 标题水平居中 */
-    font-size: 2rem; /* 调整字体大小 */
-    margin-bottom: 20px; /* 添加下边距 */
-    color: white; /* 可选：调整标题颜色 */
+    text-align: center; 
+    font-size: 2rem; 
+    margin-bottom: 20px; 
+    color: white; 
 }
 
 body {
@@ -344,7 +343,7 @@ main {
 }
 
 .team-card {
-    background: linear-gradient(to bottom, #1f64b3, #72359d);
+    background:  #1b395a;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
